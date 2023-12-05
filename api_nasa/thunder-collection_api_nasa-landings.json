@@ -1,0 +1,148 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "api_nasa-landings",
+    "dateExported": "2023-12-05T08:18:58.185Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8a80c53f-f692-49d9-a990-c3fb950c15f3",
+            "colId": "f83b9b59-e646-4ce3-8fc5-1837107cd189",
+            "containerId": "",
+            "name": "/ping",
+            "url": "http://localhost:3000/ping",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-04T08:47:24.613Z",
+            "modified": "2023-12-04T08:54:11.443Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8c85dc8f-317a-4412-98ed-df21f07770ce",
+            "colId": "f83b9b59-e646-4ce3-8fc5-1837107cd189",
+            "containerId": "",
+            "name": "/",
+            "url": "http://localhost:3000/api/astronomy/landings?minimum_mass=15000000",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-12-04T10:45:44.392Z",
+            "modified": "2023-12-04T15:56:52.267Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "minimum_mass",
+                    "value": "15000000",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "a6411d10-aceb-436c-9507-c7ce8d7cb1ee",
+            "colId": "f83b9b59-e646-4ce3-8fc5-1837107cd189",
+            "containerId": "",
+            "name": "/ from&to",
+            "url": "http://localhost:3000/api/astronomy/landings?from=1971&to=1973",
+            "method": "GET",
+            "sortNum": 22500,
+            "created": "2023-12-04T14:34:54.732Z",
+            "modified": "2023-12-04T16:15:32.382Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "from",
+                    "value": "1971",
+                    "isPath": false
+                },
+                {
+                    "name": "to",
+                    "value": "1973",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "bb52fc01-3578-44ad-bd80-c40b7961cc34",
+            "colId": "f83b9b59-e646-4ce3-8fc5-1837107cd189",
+            "containerId": "",
+            "name": "/mass/:mass",
+            "url": "http://localhost:3000/api/astronomy/landings/mass/30000",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-12-04T12:45:40.020Z",
+            "modified": "2023-12-04T14:09:45.923Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2053a58c-36a5-48ef-b52f-4e67c0538934",
+            "colId": "f83b9b59-e646-4ce3-8fc5-1837107cd189",
+            "containerId": "",
+            "name": "/create",
+            "url": "http://localhost:3000/api/astronomy/landings/create",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-12-04T15:21:55.860Z",
+            "modified": "2023-12-04T15:34:09.883Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"Agen\",\r\n  \"id\": 392,\r\n  \"nametype\": \"Valid\",\r\n  \"recclass\": \"H5\",\r\n  \"mass\": 30000,\r\n  \"fall\": \"Fell\",\r\n  \"year\": \"1814-01-01T00:00:00.000\",\r\n  \"reclat\": 44.216670,\r\n  \"reclong\": 0.616670,\r\n  \"geolocation\": { \"latitude\": 44.21667, \"longitude\": 0.61667 }\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "db918629-fa0d-4051-8d06-888d08b9c5a3",
+            "colId": "f83b9b59-e646-4ce3-8fc5-1837107cd189",
+            "containerId": "",
+            "name": "/class/:recclass",
+            "url": "http://localhost:3000/api/astronomy/landings/class/L6",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-12-04T13:44:03.012Z",
+            "modified": "2023-12-04T14:25:33.674Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5b7fdf81-d6ae-4a3c-80b6-c6c460966024",
+            "colId": "f83b9b59-e646-4ce3-8fc5-1837107cd189",
+            "containerId": "",
+            "name": "/edit",
+            "url": "http://localhost:3000/api/astronomy/landings/edit/423",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-12-04T15:35:49.378Z",
+            "modified": "2023-12-04T15:54:56.061Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"Agen2\",\r\n  \"id\": 392,\r\n  \"nametype\": \"Valid\",\r\n  \"recclass\": \"H5\",\r\n  \"mass\": 30000,\r\n  \"fall\": \"Fell\",\r\n  \"year\": \"1814-01-01T00:00:00.000\",\r\n  \"reclat\": 44.216670,\r\n  \"reclong\": 0.616670,\r\n  \"geolocation\": { \"latitude\": 44.21667, \"longitude\": 0.61667 }\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce017550-fe47-4729-a1ba-ef64940250e5",
+            "colId": "f83b9b59-e646-4ce3-8fc5-1837107cd189",
+            "containerId": "",
+            "name": "/delete",
+            "url": "http://localhost:3000/api/astronomy/landings/delete/392",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-12-04T15:52:41.342Z",
+            "modified": "2023-12-04T15:53:54.933Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
